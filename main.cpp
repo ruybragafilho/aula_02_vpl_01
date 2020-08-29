@@ -63,14 +63,16 @@ int main()  {
     *(v_ptr + 4);
 
     //imprimir o quinto elemento de values utilizando a notação de subscrito de array
-    std::cout << values[4];
+    std::cout << values[4] << std::endl;
 
     // 16. Mostre que endereço é referenciado por v_ptr + 3, e que valor é armazenado nessa localização.
     std::cout << (v_ptr + 3) << std::endl;
     std::cout << *(v_ptr + 3) << std::endl;
 
     // 17. Supondo que v_ptr aponte para values[4], que endereço é referenciado por v_ptr -= 4? Que valor é armazenado nessa localização?
-    &(values[0]);
+    v_ptr = &(values[4]);
+    std::cout << (v_ptr - 4) << std::endl;
+    std::cout << *(v_ptr - 4) << std::endl;
 
    
     return 0;
